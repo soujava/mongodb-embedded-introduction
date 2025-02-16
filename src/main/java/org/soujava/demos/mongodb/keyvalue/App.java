@@ -1,4 +1,4 @@
-package org.soujava.demos.arangodb.keyvalue;
+package org.soujava.demos.mongodb.keyvalue;
 
 import jakarta.enterprise.inject.se.SeContainer;
 import jakarta.enterprise.inject.se.SeContainerInitializer;

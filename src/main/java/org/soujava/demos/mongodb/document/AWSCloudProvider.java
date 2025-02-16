@@ -1,4 +1,4 @@
-package org.soujava.demos.arangodb.document;
+package org.soujava.demos.mongodb.document;
 
 import jakarta.nosql.Column;
 import jakarta.nosql.DiscriminatorValue;

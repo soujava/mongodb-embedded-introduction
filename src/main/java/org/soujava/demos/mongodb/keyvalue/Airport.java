@@ -1,4 +1,4 @@
-package org.soujava.demos.arangodb.keyvalue;
+package org.soujava.demos.mongodb.keyvalue;
 
 import jakarta.nosql.Column;
 import jakarta.nosql.Entity;
