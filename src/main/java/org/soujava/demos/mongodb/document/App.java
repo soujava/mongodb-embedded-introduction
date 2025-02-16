@@ -29,20 +29,6 @@ public class App {
         var faker = new Faker();
         LOGGER.info("Starting the application");
         try (SeContainer container = SeContainerInitializer.newInstance().initialize()) {
-            var template = container.select(DocumentTemplate.class).get();
-            LOGGER.info("Creating 10 documents");
-            for (int index = 0; index < 5; index++) {
-                template.insert(List.of(AWSCloudProvider.of(faker), AzureCloudProvider.of(faker)));
-            }
-
-            System.out.println("The cloud providers here");
-            template.select(CloudProvider.class).stream().forEach(System.out::println);
-
-            System.out.println("The AWS cloud providers here");
-            template.select(AWSCloudProvider.class).stream().forEach(System.out::println);
-
-            System.out.println("The Azure cloud providers here");
-            template.select(AzureCloudProvider.class).stream().forEach(System.out::println);
         }
     }
 
