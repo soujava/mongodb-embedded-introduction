@@ -1,6 +1,5 @@
 package org.soujava.demos.mongodb.document;
 
-import jakarta.json.bind.annotation.JsonbVisibility;
 import jakarta.nosql.Column;
 import jakarta.nosql.Convert;
 import jakarta.nosql.Entity;

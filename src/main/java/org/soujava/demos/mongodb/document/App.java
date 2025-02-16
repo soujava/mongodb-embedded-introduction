@@ -29,6 +29,8 @@ public class App {
         var faker = new Faker();
         LOGGER.info("Starting the application");
         try (SeContainer container = SeContainerInitializer.newInstance().initialize()) {
+            Category category = new Category("category", "Category");
+
         }
     }
 
