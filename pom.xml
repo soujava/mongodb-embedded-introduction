@@ -15,7 +15,7 @@
     <groupId>org.soujava.demos.arangodb</groupId>
     <artifactId>arangodb</artifactId>
     <version>1.0.0</version>
-    <name>JNoSQL Demo using Java SE ArangoDB</name>
+    <name>JNoSQL Demo using Java SE MongoDB exploring Embedded</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -96,7 +96,7 @@
         </dependency>
         <dependency>
             <groupId>org.eclipse.jnosql.databases</groupId>
-            <artifactId>jnosql-arangodb</artifactId>
+            <artifactId>jnosql-mongodb</artifactId>
             <version>1.1.4</version>
         </dependency>
     </dependencies>
