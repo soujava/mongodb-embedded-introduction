@@ -29,6 +29,36 @@ public class Product {
     @Column
     private Set<Category> categories;
 
+    Product(String name, Manufacturer manufacturer, List<String> tags, Set<Category> categories) {
+        this.name = name;
+        this.manufacturer = manufacturer;
+        this.tags = tags;
+        this.categories = categories;
+    }
+
+    Product() {
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public Manufacturer getManufacturer() {
+        return manufacturer;
+    }
+
+    public List<String> getTags() {
+        return tags;
+    }
+
+    public Set<Category> getCategories() {
+        return categories;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) {
@@ -52,5 +82,9 @@ public class Product {
                 ", tags=" + tags +
                 ", categories=" + categories +
                 '}';
+    }
+
+    public static ProductBuilder builder() {
+        return new ProductBuilder();
     }
 }
